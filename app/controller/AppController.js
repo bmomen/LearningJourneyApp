@@ -5,15 +5,12 @@ Ext.define('LearningJourney.controller.AppController', {
         refs: {
             container:'main',
             infoButton:'#infoButton',
-            menuPanel:'menuPanel',
-            articulation:'articulation'
+            menuPanel:'menuPanel'
             
         },
         control: {
             
-            'articulation dataview':{
-              itemtap:'onArtTap'  
-            },
+          
            
            'menuPanel dataview':{
                itemtap:'onMenuTap'
@@ -45,13 +42,6 @@ Ext.define('LearningJourney.controller.AppController', {
     
     onMenuTap:function(list,index,target,record){
         var newView = record.get('panelID');
-        newView = "LearningJourney.view." + newView;
-                   newView = Ext.create(newView);                    
-                   this.getContainer().push(newView);
-    },
-    
-    onArtTap:function(list,index,target,record){
-        var newView = record.get('collegeID');
         newView = "LearningJourney.view." + newView;
                    newView = Ext.create(newView);                    
                    this.getContainer().push(newView);
