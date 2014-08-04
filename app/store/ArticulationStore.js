@@ -13,8 +13,8 @@ Ext.define('LearningJourney.store.ArticulationStore',{
             collegeID:'DundeeAngusCollege'
         },
         {
-            collegeName:'Test',
-            collegeID:'Test'
+            collegeName:'Test212',
+            collegeID:'Test32'
         }
     ]
 });
