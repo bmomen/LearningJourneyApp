@@ -1,0 +1,22 @@
+Ext.define('LearningJourney.view.Undergraduate',{
+    extend:'Ext.Panel',
+    xtype:'undergraduate',           
+    config:{
+            title:'Courses',
+            layout:'card',
+            showAnimation:{type:'fadeIn',duration:500},
+            items:[
+                {
+                docked:'top',
+                html:'<div class="menuInfo"><p>Select an Undergraduate Course to find out more and to see relevant links to course pages.</p>'
+                },
+                {
+                    fullscreen:'true',
+                    xtype:'list',
+                    store:'UndergraduateStore',
+                    itemTpl:'{courseName}',
+                    grouped:true
+                }
+            ]
+            }
+});
