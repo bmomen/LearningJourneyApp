@@ -4,17 +4,14 @@ Ext.define('LearningJourney.store.ArticulationStore',{
         model:'LearningJourney.model.ArticulationModel'
     },
     data:[
+        
         {
-            collegeName:'Fife College',
-            collegeID:'FifeCollege'
+            schemeName:'Co-Curriculum Degree Programme',           
+            schemeID:'cocurriculum'
         },
         {
-            collegeName:'Dundee & Angus College',
-            collegeID:'DundeeAngusCollege'
-        },
-        {
-            collegeName:'Test212',
-            collegeID:'Test32'
+            schemeName:'Associate Student Programme',            
+            schemeID:'associate'
         }
     ]
 });
