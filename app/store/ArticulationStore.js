@@ -11,6 +11,10 @@ Ext.define('LearningJourney.store.ArticulationStore',{
         {
             collegeName:'Dundee & Angus College',
             collegeID:'DundeeAngusCollege'
+        },
+        {
+            collegeName:'Test',
+            collegeID:'Test'
         }
     ]
 });
