@@ -1,8 +1,8 @@
 Ext.define('LearningJourney.store.LifeStore',{
     extend:'Ext.data.Store',
     config:{
-        model:'LearningJourney.model.LifeModel'
-    },
+        model:'LearningJourney.model.LifeModel',
+    
     data:[
         {
             lifeMenuTitle:'Accomodation',
@@ -21,4 +21,5 @@ Ext.define('LearningJourney.store.LifeStore',{
             lifeMenuDesc:'Find out more about the University\'s Student Association'
         }
     ]
+}
 });
