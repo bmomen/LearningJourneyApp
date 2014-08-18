@@ -7,14 +7,32 @@ Ext.define('LearningJourney.view.Articulation',
                 showAnimation:{type:'fadeIn',duration:500},
                 layout:'vbox',
                 fullscreen:true,
-                scrollable: { direction: 'vertical' },
+//              This scrollable code stops overscrolling on the page
+                scrollable : {
+                direction: 'vertical',
+                directionLock: true,
+                momentumEasing:  {
+                    momentum: {
+                    acceleration: 30,
+                    friction: 0.5
+                    },
+                bounce: {
+                     acceleration: 0.0001,
+                     springTension: 0.9999,
+                     },
+                 minVelocity: 5
+                },
+                outOfBoundRestrictFactor: 0   
+                },
                 items:[
                     {
                         
                         styleHtmlContent:true,
                         styleHtmlCls:'articulationText',
                         html:'<h1><u>What is Articulation?</h1></u><br>\n\
-                              <p>Insert articulation description here</p><br><br>\n\
+                              <p>Articulation is a pathway for students who would like to progress from\n\
+                               a HND (Higher National Diploma) or HNC (Higher National Certificate) directly into 2nd or 3rd year or a degree programme. This is also referred\n\
+                               to as Direct Entry.  </p><br><br>\n\
                               <h1><u>Why Articulate?</h1></u><br>\n\
                               <p>A matriculation card to access, and borrow resources from, the University library.<br>\n\
                                A personal IT account, including email address and access to a range of online resources.<br>\n\
